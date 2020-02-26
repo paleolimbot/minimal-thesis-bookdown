@@ -1,0 +1,59 @@
+--- 
+title: "A Minimal Thesis Example"
+author: "Dewey Dunnington"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+template: template.tex
+documentclass: article
+bibliography: book.bib
+biblio-style: authoryear
+biblatexoptions: "maxbibnames=15,maxcitenames=2,uniquelist=false,giveninits=true,sortcites=true,uniquename=false"
+link-citations: yes
+---
+
+`r if (knitr::is_html_output()) '
+# Title Page {-}
+
+(the actual title page only renders in PDF format)
+'`
+
+\begin{center}
+  \hyphenpenalty=10000{A Minimal Thesis Title}\\
+\end{center}
+
+\vfill
+
+\begin{center}
+  \rmfamily by
+\end{center}
+
+\vfill
+
+\begin{center}
+  \rmfamily Dewey W. Dunnington
+\end{center}
+
+\vfill
+
+\begin{center}
+  Submitted in partial fulfillment of the requirements for the degree of \\
+  Doctor of Philosophy
+  
+  \vskip 2.5ex
+  
+  at \\
+  
+  \vskip 2.5ex
+  
+  Dalhousie University \\
+  Halifax, Nova Scotia \\
+  June 2019
+\end{center}
+
+\vfill
+
+\begin{center}
+  \rmfamily \copyright\ Copyright by Dewey W. Dunnington, 2020
+\end{center}
+
+\clearpage

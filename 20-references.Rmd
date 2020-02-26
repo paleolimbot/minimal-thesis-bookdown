@@ -1,0 +1,11 @@
+
+`r if (knitr::is_html_output()) '
+# References {-}
+
+<div id="refs" class="references"></div>
+'`
+
+`r if (knitr::is_latex_output()) '
+\\section*{References}
+\\printbibliography[heading=none]
+'`

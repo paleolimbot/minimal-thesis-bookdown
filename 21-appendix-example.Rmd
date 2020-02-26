@@ -1,0 +1,13 @@
+
+`r if (knitr::is_html_output()) '
+# (APPENDIX) Appendix {-}
+'`
+
+`r if(knitr::is_latex_output())  '
+\\clearpage
+\\appendix
+'`
+
+# Example {#appendix-example}
+
+A good place for long tables, rotated figures, etc. Subsequent appendices don't need the conditional junk above...each output format has a different way of signaling that it's appendix time.
